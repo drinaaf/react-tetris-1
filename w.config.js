@@ -59,7 +59,7 @@ var devPlugins =  [
   new webpack.NoErrorsPlugin(),
   // 打开浏览器页面
   new OpenBrowserPlugin({
-    url: 'http://127.0.0.1:8080/'
+    url: 'http://127.0.0.1:3000/'
   }),
   // css打包
   new ExtractTextPlugin('css.css', {
@@ -99,7 +99,7 @@ var devServer = {
   contentBase: './server',
   colors: true,
   historyApiFallback: false,
-  port: 8080, // defaults to "8080"
+  port: 3000, // defaults to "8080"
   hot: true, // Hot Module Replacement
   inline: true, // Livereload
   host: '0.0.0.0',
